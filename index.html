@@ -3,68 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Series Coreanas</title>
+    <title>Series Coreanas </title>
+  
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+</head> 
+    
+    <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Mundo K-Drama</h1>
+    <header class="header">
+        <div class="logo">
+           
+            <img src="inicio.webp" alt="Logo Coreano">
+            <div>
+                <h1>Series Coreanas </h1>
+                <p>El entretenimiento Favorito de todos</p>
+            </div>
+        </div>
+
+        <nav class="nav">
+           
+            <a href="#inicio">Inicio</a>
+            <a href="#que-es">¿Qué es?</a>
+            <a href="#ejemplos">Ejemplos</a>
+            <a href="#caracteristicas ">ICaracteristicas</a>
+            <a href="#galeria">Galeria</a>
+           
+        </nav>
     </header>
 
-    <!-- NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
-            <li><a href="#que-es" onclick="mostrarSeccion('que-es')">¿Qué es?</a></li>
-            <li><a href="#caracteristicas" onclick="mostrarSeccion('caracteristicas')">Características</a></li>
-            <li><a href="#ejemplos" onclick="mostrarSeccion('ejemplos')">Mejores Series</a></li>
-            <li><a href="#galeria" onclick="mostrarSeccion('galeria')">Galería</a></li>
-        </ul>
-    </nav>
-
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <!-- SECCIÓN INICIO -->
-        <section id="inicio" class="seccion activa">
-            <h2>Bienvenidos al mundo de las Series Coreanas</h2>
-            <img src="inicio.webp" alt="Póster de series coreanas">
-            <p>Descubre el fenómeno mundial del Hallyu y la ola de entretenimiento que ha conquistado corazones en todo el planeta.</p>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <span class="badge">SERIES COREANAS</span>
+                <h2>Bienvenidos al mundo de las Series Coreanas</h2>
+                 <p>Descubre el fenómeno mundial del Hallyu y la ola de entretenimiento que ha conquistado corazones en todo el planeta.</p>
+                
+                <a href="#que-es" class="btn">Comenzar</a>
+            </div>
+            <div class="hero-imagen">
+                
+                <img src="QUEES.jpng" >
+            </div>
         </section>
 
-        <!-- SECCIÓN ¿QUÉ ES? -->
+        
         <section id="que-es" class="seccion">
-            <h2>¿Qué son los K-Dramas?</h2>
+            <article class="card">
+                 <h2>¿Qué son los K-Dramas?</h2>
               <img src="QUEES.jpeg" alt="Personas viendo televisión">
             <p>Los K-Dramas son series de televisión producidas en Corea del Sur. A diferencia de las series occidentales, suelen tener una historia cerrada y constar generalmente entre 16 y 20 episodios.</p>
              <p>Al igual que tramas muy interesantes y de largas temporadas, dependiendo a cada productor </p>
             <p>Cubren una gran variedad de géneros como romance, fantasía, terror, acción y ciencia ficción.</p>
+                </p>
+            </article>
         </section>
 
-        <!-- SECCIÓN CARACTERÍSTICAS -->
-        <section id="caracteristicas" class="seccion">
-            <h2>Características Principales</h2>
-            <img src="img/caracteristicas.jpg" alt="Escena romántica">
-            <ul>
-                 <li>✨ El drama de cada actor.</li>
+      
+        <section id="caracteristicas" class="caracteristicas">
+            <article class="card">
+                <h2>Caracteristicas Principales</h2>
+                
+                <img src="IMG.png" alt="Icono de caracteristicas">
+            
+                <ul>
+                    <li>✨ El drama de cada actor.</li>
                 <li>✨ Guiones bien estructurados y emocionales.</li>
                 <li>✨ Alta calidad de producción y fotografía.</li>
                 <li>✨ Vestuario y maquillaje impecables.</li>
                 <li>✨ Finales cerrados y satisfactorios.</li>
-            </ul>
+                </ul>
+               
+            </article>
         </section>
 
-        <!-- SECCIÓN EJEMPLOS -->
-        <section id="ejemplos" class="seccion">
-            <h2>Series Imperdibles</h2>
-            
-            <article>
+
+         <section id="ejemplos" class="seccion">
+            <article class="card">
+                <h2>Series Imperdibles </h2>
+                <div class="grid">
+                    <div class="mini-card">
+                        <section>
+                        <article>
+                            
                 <h3>🔹 SABUESOS</h3>
                 <p>Es una serie de acción y drama que sigue a dos jóvenes boxeadores que se unen a un prestamista benevolente para enfrentarse a un despiadado usurero.</p>
              <img src="Sabuesos.webp">
             </article>
-            
+                    <article>
              <h3>🔹 MI ADORABLE DEMONIO</h3>
                 <p>Serie que combina romance y elementos sobrenaturales, centrado en la relación entre una heredera arrogante y un demonio de 200 años que pierde sus poderes al involucrarse con ella.</p>
             <img src="mi demonio.png">
@@ -82,22 +107,23 @@
             </article>
         </section>
 
-
-        <!-- SECCIÓN GALERÍA -->
-        <section id="galeria" class="seccion">
-            <h2>Galería Visual</h2>
-        
-            <p>La estética visual es una de las cosas que más enamora a los fans, con paisajes hermosos y tomas cinematográficas.</p>
+       
+         <section id="galeria" class="seccion">
+            <article class="card">
+                <h2>Galería Visual</h2>
+                 <img src="collage.png">
+                <p>La estética visual es una de las cosas que más enamora a los fans, con paisajes hermosos y tomas cinematográficas.</p>
+            
+                <p><strong>Alumno:</strong> BRENDA YANETH DEMETRIO ANDRES</p>
+                <p><strong>Materia:</strong> Desarrollo de Aplicaciones Móviles</p>
+            </article>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Práctica HTML5 - Tema: Series Coreanas</p>
     </footer>
 
     <script src="js/app.js"></script>
-</body>
-</html>
 </body>
 </html>
